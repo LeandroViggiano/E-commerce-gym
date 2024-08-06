@@ -1,0 +1,90 @@
+/* Estilos para el encabezado que contiene la barra de navegación */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #1e1e1e;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+  }
+  
+  /* Estilos para el contenedor principal de la barra de navegación */
+  .menu {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	color: #fff;
+  }
+  
+  /* Estilos para cada item de navegación */
+  .navItem {
+	display: flex;
+	align-items: center;
+	padding: 15px 10px;
+	cursor: pointer;
+	position: relative;
+	color: #888;
+	transition: background-color 0.3s, color 0.3s;
+	flex: 1;
+	justify-content: center;
+  }
+  
+  /* Estilos al pasar el mouse por encima o cuando el item está activo */
+  .navItem:hover,
+  .navItem.active {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Estilos para los iconos */
+  .icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+  }
+  
+  /* Estilos para el texto de cada item */
+  .text {
+	font-size: 14px;
+	display: none;
+  }
+  
+  /* Estilos para el indicador de notificaciones */
+  .notification {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: #f00;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #fff;
+  }
+  
+  .notificationInner {
+	font-size: 10px;
+	color: #fff;
+  }
+  
+  /* Estilos específicos para el item activo */
+  .active {
+	color: #8080ff;
+  }
+  
+  /* Media query para pantallas más grandes */
+  @media (min-width: 768px) {
+	.navItem {
+	  justify-content: flex-start;
+	  padding: 15px 20px;
+	}
+  
+	.text {
+	  display: inline;
+	}
+  }
