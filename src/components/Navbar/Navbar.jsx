@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, Search, Bell, Star, User } from 'react-feather';
 import styles from './Navbar.module.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavItem = ({ icon, text, active = false, notifications = 0 }) => (
   <span className={`${styles.navItem} ${active ? styles.active : ''}`}>
@@ -23,6 +24,7 @@ const Navbar = () => {
         <NavItem icon={<Bell className={styles.icon} />} text="Notifications" notifications={13} />
         <NavItem icon={<Star className={styles.icon} />} text="Favorites" />
         <NavItem icon={<User className={styles.icon} />} text="Your Profile" notifications={1} />
+       <CartWidget />
       </nav>
     </header>
   );
