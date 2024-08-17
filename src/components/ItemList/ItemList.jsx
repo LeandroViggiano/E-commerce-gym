@@ -9,3 +9,5 @@ const ItemList = ({products}) => {
         </section>
     )
 }
+
+export default ItemList;

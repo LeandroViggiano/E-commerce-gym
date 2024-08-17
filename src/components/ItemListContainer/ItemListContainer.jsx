@@ -12,7 +12,7 @@ const ItemListContainer = () => {
     })
 
     return (
-        <h1>ITEM LIST CONTAINER</h1>
+        <ItemList products={products}/>
     )
 }
 
